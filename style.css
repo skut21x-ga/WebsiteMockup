@@ -1,25 +1,28 @@
 * {
     box-sizing:border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* border: 1px solid blue; */
+    border: 1px solid blue; */
 }
 
-body{     
-    background-image: url("Images/alps-altitude-bird-s-eye-view-2013658.png");
+.first-section{
+    background-image: url("images/alps-altitude-bird-s-eye-view-2013658.png");
     background-size: cover;
-    background-position-y: -50px;
-}
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    margin:-20px;
+    padding-top: 0px;
+    }
+
 
 .top{
-        height: 400px;
-        padding-top: 10px;
-        margin-bottom: -300px;
-    }
+    height: 400px;
+    padding-top: 10px;
+    margin-bottom: -300px;}
+
     
 .logodiv{
     float: left;
-    padding-left: 30px;
-}
+    padding-left: 30px;}
 
 .topnavbar {
     display: flex;
@@ -28,18 +31,16 @@ body{
     font-size: 15px;
     font-weight: bold;
     justify-content: flex-end;
-    height: 30px;
-}
+    height: 30px;}
 
 .toplink {
     margin: 5px 15px 0 0px;
     text-decoration: none;
-    color: white;
-}
+    color: white;}
 
 #active {
     position: relative;
-    }
+}
 
 #active::after {
         content: "";
@@ -89,6 +90,7 @@ body{
     text-shadow: -2px 2px gray;
     letter-spacing: 1px;
     padding-top: 7%;
+    margin-top: 20px;
 }
 
 #larger {
@@ -130,16 +132,15 @@ body{
     padding:auto;
     color: white;
     font-size: 14px;
+    width: 100vw 100vw;
 }
 
 #aboutme-header {
     padding: 50px 0 0px 0;
 }
 
-
 #aboutme-text {
-    margin: 20px 50px 0 50px;
-    padding: 0 50px 75px 50px;
+    padding: 0 120px 75px 120px;
     font-weight: 100;
     letter-spacing: .5px;
     line-height: 25px;
@@ -147,14 +148,101 @@ body{
     font-size: 17px;
 }
 
+.ourwork-section {
+    background-color:white;
+    margin:-20px;
+    padding-bottom:auto;
+    padding-top: 20px;
+    color: #3399cc;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    width: 100vw 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+}
+
+.ourwork-photos-grid {
+    display: grid;
+    grid-template-rows: 200x 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 6px;
+    margin-top: 20px;
+    color:transparent
+}
+
+#work-photo {
+    min-height:200px;
+}
+.photo-hut{
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    background-image: url("images/cold-daylight-fjord-1586298.png");
+    background-size: cover;
+    min-height: 200px;
+}
+
+.photo-dog{
+    grid-row: 1 / 1;
+    grid-column: 2 / 4;
+    background-image: url("images/adorable-animal-breed-434090.png");
+    background-size: cover;
+    min-height: 200px;
+}
+
+.photo-ski{
+    background-image: url("images/action-active-cold-2433353.png");
+    background-size: cover;
+    min-height: 200px;
+    grid-row: 2 / 4;
+    grid-column: 1/ 3;
+}
+
+.photo-backpack{
+    background-image: url("images/adventure-adventurer-altitude-2577274.png");
+    background-size: cover;
+    min-height: 200px;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+.photo-cross{
+    background-image: url("images/beatiful-landscape-cold-colors-2832052.png");
+    background-size: cover;
+    min-height: 200px;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+.testimonial-h3 {
+    background-color:white;
+    margin:20px;
+    padding:auto;
+    color: #3399cc;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    width: 100vw 100vw;
+}
+
+/* Tablets */
 
 @media (max-width: 700px){
     .hellobutton{
         display:none;}
-}
+
+    .ourwork-photos-grid {
+        display: grid;
+        grid-template-rows: 150x 150x 150x;
+        grid-template-columns: 150x 150x 150x;
+        grid-gap: 4px;
+        margin-top: 15px;
+        color:transparent;}
+    
+    #workphoto{
+            min-height: 150px;}
 
 /* Small devices */
-@media (max-width: 568px){
+@media (max-width: 650px){
     .intro-h1{
         transform: rotate(0);
         text-align: center;
@@ -224,4 +312,43 @@ body{
     background-position-y: -100px;
     background-size: 900px;
     }
+
+    .ourwork-photos-grid {
+    display: grid;
+    grid-template-rows: 150x 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 4px;
+    margin-top: 15px;
+    color:transparent;}
+
+    #workphoto{
+        min-height: 150px;}
 }
+}
+/* Super Small devices */
+@media (max-width: 400px){
+    .ourwork-photos-grid {
+        display: grid;
+        grid-template-rows: 100x 100px 100px;
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 4px;
+        margin-top: 15px;
+        color:transparent;}
+    
+        #workphoto{
+            min-height: 100px;}
+
+        }
+
+        /* Super Big devices */
+        @media (min-width: 1200px){
+            .ourwork-photos-grid {
+                display: grid;
+                grid-template-rows: 300x 300px 300px;
+                grid-template-columns: 300px 300px 300px;
+                grid-gap: 4px;
+                margin-top: 15px;
+                color:transparent;}
+            
+                #workphoto{
+                    min-height: 300px;}
