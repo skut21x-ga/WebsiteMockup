@@ -1,7 +1,7 @@
 * {
     box-sizing:border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 body{     
@@ -133,13 +133,13 @@ body{
 }
 
 #aboutme-header {
-    padding: 50px 0 0 0;
+    padding: 50px 0 0px 0;
 }
 
 
 #aboutme-text {
     margin: 20px 50px 0 50px;
-    padding: 0 50px 50px 50px;
+    padding: 0 50px 75px 50px;
     font-weight: 100;
     letter-spacing: .5px;
     line-height: 25px;
@@ -212,13 +212,16 @@ body{
         border: 1px solid white;
     }
     .aboutme {
-        margin: 0px -20px 0px -20px;
+        margin: 0 -20px 0 -20px;
+        padding: 0 0 -50px 0;
     }
 
     #aboutme-header {
-        padding: 25px 10px 0 10px;
+        padding: 25px 10px 0px 10px;
     }
+
     body {
-    background-position-y: -50px;
+    background-position-y: -100px;
+    background-size: 900px;
     }
 }
