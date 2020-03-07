@@ -1,8 +1,7 @@
 * {
     box-sizing:border-box;
-    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* border: 1px solid blue;
+    font-family: 'Lato', sans-serif;
+   /*border: 1px solid blue;
     /* ^ Code to see DIV Borders ^ */
 }
 
@@ -29,7 +28,7 @@
 
 .topnavbar {
     display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     color:white;
     font-size: 15px;
     font-weight: bold;
@@ -56,7 +55,7 @@
 }
 
 .hellobutton {    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #3399cc;
     border-radius: 20px;
     border: 0px solid white;
@@ -70,7 +69,7 @@
 }
 
 .firstbuttontext {    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #3399cc;
     height: 30px;
     width: 90px;
@@ -139,16 +138,14 @@
 
 #aboutme-header {
     padding: 50px 0 0px 0;
-    letter-spacing: -.5px;
 
 }
 
 #aboutme-text {
     padding: 0 120px 75px 120px;
     font-weight: 100;
-    letter-spacing: .5px;
     line-height: 25px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
 }
 
@@ -160,14 +157,13 @@
     margin:-20px;
     padding-bottom:auto;
     padding-top: 20px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     width: 100vw 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1000px;
-    letter-spacing: -.5px;
+    height: auto;
 }
 
 #photo-style{
@@ -217,7 +213,7 @@
     grid-column: 1/ 3;
     width: 100%;
     height: 100%;
-    margin-top:-30px;
+    margin-top:-31px;
     }
 
 .photo-header {
@@ -239,7 +235,7 @@
     font-weight: 100;
     line-height: 25px;
     word-spacing: -.5px;
-    margin: -200px 50px 5px 50px;
+    margin: -200px 65px 5px 65px;
     font-stretch: expanded;
 }
 
@@ -284,13 +280,76 @@
     background-color:white;
     padding:auto;
     color: #3399cc;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
     width: 100vw 100vw;
-    font-weight: 700;
-    margin: 50px 0 0 0;
-    letter-spacing: -1px;
+    font-weight: 900;
+    margin: 70px 0 0 0;
 }
+
+.testimonal-photo {
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+.testimonial-name {
+    color:#3399cc;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.testimonial-quote-section {
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 10px 350px 10px;
+    justify-content: center;
+    line-height: 25px;
+}
+
+
+.testimonial-quotation-1{
+    position: relative;
+    top:-10px;
+    right: 20px;
+    grid-column: 1 / 2;
+}
+
+.testimonial-quotation-2{
+    position: relative;
+    top: 83px;
+    left: 3px;
+    grid-column: 3 / 4;
+}
+
+.testimonial-text {
+    max-width: 350px;
+    font-size: 14px;
+    color:#3399cc;
+    grid-row: 1 / 1;
+    grid-column: 2 / 3;}
+
+.mini-circles {
+    justify-content: center;
+    display: flex;
+    margin-bottom:50px;
+    margin-top: -20px;
+}
+footer {
+    background-color:#3693d6;
+    color: white;
+    font-size: 14px;
+    width: 100vw 100vw;
+    margin: 10px -20px -10px -20px;
+    padding: 10px 20px 10px 20px;
+}
+
+
+
+
+
+
+
+
+
 
 /* Tablets */
 @media (max-width: 700px)
@@ -331,12 +390,67 @@
        #aboutme-text {
         padding: 0 10px 50px 10px;
     }
-
+}
 
 /* Small devices */
 @media (max-width: 600px)
-{
-        .intro-h1{
+{.testimonial-h3 {
+    background-color:white;
+    padding:auto;
+    color: #3399cc;
+    font-size: 25px;
+    width: 100vw 100vw;
+    font-weight: 900;
+    margin: 70px 0 0 0;
+}
+
+.testimonal-photo {
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+.testimonial-name {
+    color:#3399cc;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.testimonial-quote-section {
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 10px 250px 10px;
+    justify-content: center;
+    line-height: 25px;
+}
+
+.testimonial-quotation-1{
+        position: relative;
+        top:-10px;
+        grid-column: 1 / 2;
+}
+
+.testimonial-quotation-2{
+    position: relative;
+    top: 110px;
+    left: 3px;
+    grid-column: 3 / 4;
+}
+
+.testimonial-text {
+    max-width: 250px;
+    font-size: 13px;
+    color:#3399cc;
+    grid-row: 1 / 1;
+    grid-column: 2 / 3;}
+
+.mini-circles {
+        justify-content: center;
+        display: flex;
+        margin-bottom:20px;
+        margin-top: 10px;
+    }
+
+.intro-h1{
        transform: rotate(0);
        text-align: center;
        margin: 10px;
@@ -416,8 +530,7 @@
 
    #workphoto{
        min-height: 100px;}
-
-}}
+}
 
 
 /* Super Big devices */
@@ -435,3 +548,4 @@
 
 
 
+}
