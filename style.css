@@ -132,8 +132,9 @@
     margin:-20px;
     padding:auto;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     width: 100vw 100vw;
+    font-weight: bold;
 }
 
 #aboutme-header {
@@ -142,7 +143,7 @@
 }
 
 #aboutme-text {
-    padding: 0 120px 75px 120px;
+    padding: 0 200px 75px 200px;
     font-weight: 100;
     line-height: 25px;
     font-family: 'Lato', sans-serif;
@@ -323,7 +324,7 @@
 .testimonial-text {
     max-width: 350px;
     font-size: 14px;
-    color:#3399cc;
+    color:#3693D6;
     grid-row: 1 / 1;
     grid-column: 2 / 3;}
 
@@ -334,7 +335,7 @@
     margin-top: -20px;
 }
 footer {
-    background-color:#3693d6;
+    background-color:#3693D6;
     color: white;
     font-size: 14px;
     width: 100vw 100vw;
@@ -350,17 +351,18 @@ footer {
     line-height: 25px;
 }
 
-.left-logo{
+.left-logo-desktop{
         grid-column: 1 / 2;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top:140px;
+        padding-top:10px;
         padding-left:50px;
+        padding-right: 40px;
 
 }
 
-.social-icons{
+.social-icons-desktop{
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -417,17 +419,41 @@ footer {
 
 
 
+/* Smaller Than Laptop  */
+@media (max-width: 900px){
+.left-logo-desktop{
+    display: none;}
+    .left-logo-desktop{
+        display: none;}
+    .social-icons-desktop{
+            display:none;}
+    .footer-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 25px;}
+    .footer-category {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 1000;
+        text-align: center;
+    }
+    .footer-specific {
+        margin-top: -2px;
+        font-size: 14px;
+        font-weight: 100;
+        text-align: center;
 
-
-
-
+    }        
+}
+    
 
 
 
 
 
 /* Tablets */
-@media (max-width: 700px)
+@media (max-width: 800px)
 {
     .hellobutton{
         display:none;}
@@ -451,6 +477,22 @@ footer {
     .logodiv{
         margin-left: -30px;
     }
+    .footer-category {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 900;
+
+    }
+
+    .footer-specific {
+        margin-top: px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+}
+
+.social-icons-desktop{
 }
 
 
