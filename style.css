@@ -1,11 +1,13 @@
 * {
     box-sizing:border-box;
     font-family: 'Lato', sans-serif;
+    
     /* outline: 1px solid red;
     /* ^ Code to see DIV Borders ^ */
 }
 
 .first-section{
+    background-color:#3693D6;
     background: url("images/alps-altitude-bird-s-eye-view-2013658.png") center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -286,6 +288,12 @@
     font-weight: 900;
     margin: 70px 0 0 0;
 }
+.social-icons-mobile{
+    display: none;}
+
+.left-logo-mobile{
+    display: none;
+}
 
 .testimonal-photo {
     text-align: center;
@@ -339,9 +347,8 @@ footer {
     color: white;
     font-size: 14px;
     width: 100vw 100vw;
-    margin: 10px -20px 30px -20px;
-    padding: 10px 20px 50px 20px;
-}
+    margin: 10px -20px -30px -20px;
+    padding: 10px 20px 00px 20px;}
 
 .footer-grid {
     display: grid;
@@ -420,18 +427,32 @@ footer {
 
 
 /* Smaller Than Laptop  */
-@media (max-width: 900px){
-.left-logo-desktop{
+@media (max-width: 1000px){
+    .left-logo-desktop{
     display: none;}
     .left-logo-desktop{
         display: none;}
     .social-icons-desktop{
             display:none;}
+    .social-icons-mobile{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            align-content: center;
+        }
+
+    .left-logo-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
     .footer-grid {
             display: flex;
             justify-content: center;
             align-items: center;
             line-height: 25px;}
+            
     .footer-category {
         margin-top: 20px;
         font-size: 16px;
@@ -443,11 +464,8 @@ footer {
         font-size: 14px;
         font-weight: 100;
         text-align: center;
-
-    }        
+        }
 }
-    
-
 
 
 
@@ -489,10 +507,15 @@ footer {
         font-size: 12px;
         font-weight: 300;
     }
+    .footer-text {
+        display: inline;
+        justify-content: center;
+        line-height: 30px;
+        margin-bottom: 50px;
+        text-align: center;}
 
-}
 
-.social-icons-desktop{
+    }
 }
 
 
@@ -653,7 +676,11 @@ footer {
 
    #workphoto{
        min-height: 100px;}
+    
+    .footer-text{   margin-bottom: 60px;}
+
 }
+
 
 
 /* Super Big devices */
