@@ -1,2 +1,2 @@
 # WebsiteMockup
-This is my responsive website mockup. Plesae enjoy.
+This is my responsive website mockup. Please enjoy.
